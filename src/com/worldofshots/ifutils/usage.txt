@@ -1,0 +1,8 @@
+Usage:
+
+ IFUtils <command> [switches] <input file> <output file>
+
+Commands:
+
+  -b, --base64   encode <input file> in Parchment Base64 Javascript format and
+                 write to <output file>
