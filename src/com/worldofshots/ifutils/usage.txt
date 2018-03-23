@@ -4,7 +4,12 @@ Usage:
 
 Commands:
 
-  -6 | --base64  <input story file> <output js file>
+  -p | --parchment64  <input story file> <output js file>
 
      encode <input file> in Parchment Base64 Javascript format and
+     write to <output file>
+
+  -q | --quixe64  <input story file> <output js file>
+
+     encode <input file> in Quixe Base64 Javascript format and
      write to <output file>

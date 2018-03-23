@@ -2,7 +2,6 @@ package com.worldofshots.ifutils;
 
 import java.io.*;
 import java.nio.file.*;
-import java.util.*;
 
 import com.sanityinc.jargs.CmdLineParser;
 import com.sanityinc.jargs.CmdLineParser.Option;
@@ -18,7 +17,8 @@ public class IFUtils
         }
 
         CmdLineParser parser = new CmdLineParser();
-        Option<Boolean> base64Opt = parser.addBooleanOption('6', "base64");
+        Option<Boolean> parchment64Opt = parser.addBooleanOption('p', "parchment64");
+        Option<Boolean> quixe64Opt = parser.addBooleanOption('q', "quixe64");
         Option<Boolean> helpOpt = parser.addBooleanOption('h', "help");
 
         try {
@@ -34,12 +34,18 @@ public class IFUtils
         if (parser.getOptionValue(helpOpt, Boolean.FALSE)) {
             println(getUsageText());
             System.exit(0);
-        } else if (parser.getOptionValue(base64Opt, Boolean.FALSE)) {
+        } else if (parser.getOptionValue(parchment64Opt, Boolean.FALSE)) {
             if (files.length != 2) {
                 println(getUsageText());
                 System.exit(2);
             }
             Parchment.parchmentBase64Encode(Paths.get(files[0]), Paths.get(files[1]));
+        } else if (parser.getOptionValue(quixe64Opt, Boolean.FALSE)) {
+            if (files.length != 2) {
+                println(getUsageText());
+                System.exit(2);
+            }
+            Quixe.quixeBase64Encode(Paths.get(files[0]), Paths.get(files[1]));
         }
     }
 
