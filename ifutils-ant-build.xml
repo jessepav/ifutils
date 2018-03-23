@@ -190,6 +190,8 @@
       <zipfileset file="${basedir}/ifutils.iml"/>
       <zipfileset dir="${basedir}/.idea" prefix=".idea"/>
       <zipfileset dir="${basedir}/src" prefix="src"/>
+      <zipfileset file="${basedir}/ifutils-ant-build.properties"/>
+      <zipfileset file="${basedir}/ifutils-ant-build.xml"/>
     </zip>
     <copy file="${temp.jar.path.IFUtils-src.zip}" tofile="${artifact.output.ifutils:src}/IFUtils-src.zip"/>
   </target>
