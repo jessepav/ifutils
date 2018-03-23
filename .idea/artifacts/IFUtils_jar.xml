@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="IFUtils:jar">
+    <output-path>$PROJECT_DIR$/build/artifacts/IFUtils_jar</output-path>
+    <root id="archive" name="IFUtils_jar.jar">
+      <element id="module-output" name="ifutils" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jargs.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-codec-1.10.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

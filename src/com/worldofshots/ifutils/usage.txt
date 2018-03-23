@@ -1,8 +1,10 @@
 Usage:
 
- IFUtils <command> [switches] <input file> <output file>
+ java -jar IFUtils.jar <command> [switches] <files...>
 
 Commands:
 
-  -b, --base64   encode <input file> in Parchment Base64 Javascript format and
-                 write to <output file>
+  -6 | --base64  <input story file> <output js file>
+
+     encode <input file> in Parchment Base64 Javascript format and
+     write to <output file>

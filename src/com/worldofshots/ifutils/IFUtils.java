@@ -12,6 +12,11 @@ public class IFUtils
     private static String usageText;
 
     public static void main(String[] args) throws IOException {
+        if (args.length == 0) {
+            println(getUsageText());
+            System.exit(1);
+        }
+
         CmdLineParser parser = new CmdLineParser();
         Option<Boolean> base64Opt = parser.addBooleanOption('6', "base64");
         Option<Boolean> helpOpt = parser.addBooleanOption('h', "help");
@@ -34,6 +39,7 @@ public class IFUtils
                 println(getUsageText());
                 System.exit(2);
             }
+            Parchment.parchmentBase64Encode(Paths.get(files[0]), Paths.get(files[1]));
         }
     }
 
