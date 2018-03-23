@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact name="IFUtils:src">
+    <output-path>$PROJECT_DIR$/build/artifacts/IFUtils_src</output-path>
+    <root id="root">
+      <element id="archive" name="IFUtils-src.zip">
+        <element id="file-copy" path="$PROJECT_DIR$/ifutils.iml" />
+        <element id="directory" name=".idea">
+          <element id="dir-copy" path="$PROJECT_DIR$/.idea" />
+        </element>
+        <element id="directory" name="src">
+          <element id="dir-copy" path="$PROJECT_DIR$/src" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/ifutils-ant-build.properties" />
+        <element id="file-copy" path="$PROJECT_DIR$/ifutils-ant-build.xml" />
+      </element>
+    </root>
+  </artifact>
+</component>
